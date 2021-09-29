@@ -33,8 +33,7 @@ class ContactController extends Controller
     }
 
     
-    public function destroy(Contact $contact)
-    {
-        //
+    public function destroy(Contact $contact) {
+        $contact->delete();
     }
 }
